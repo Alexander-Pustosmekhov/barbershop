@@ -1,0 +1,74 @@
+.masters {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #f7f7f7;
+}
+
+.masters__pre-title {
+  margin-bottom: 20px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+
+.masters__title {
+  margin-bottom: 44px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.masters__card {
+  text-align: center;
+}
+
+.masters__photo {
+  margin-bottom: 30px;
+}
+
+.masters__name {
+  margin-bottom: 8px;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+
+  color: #303030;
+}
+
+.masters__text {
+  margin-bottom: 30px;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  color: #ff6c00;
+}
+
+.social {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  max-width: 206px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}

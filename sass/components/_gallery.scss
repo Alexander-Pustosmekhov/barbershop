@@ -1,0 +1,21 @@
+.gallery {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.gallery__text {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.91;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+
+.gallery__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer__copyright {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #9da4bd;
+}
+
+.footer__list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  &:first-child {
+    margin-right: 40px;
+  }
+}
+
+.footer__link {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #303030;
+}
