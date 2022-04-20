@@ -29,6 +29,9 @@
 
 .masters__card {
   text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
 
 .masters__photo {

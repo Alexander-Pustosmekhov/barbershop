@@ -1,5 +1,5 @@
 .container {
-  max-width: 418px;
+  max-width: 480px;
   padding: 0px 31px;
   margin: 0 auto;
 }
@@ -49,6 +49,11 @@ h6 {
   color: #ffffff;
 }
 
+.button-appointment--location {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 ul,
 ol {
   list-style: none;
@@ -60,41 +65,8 @@ img {
   display: block;
 }
 
-.hero {
-  padding-top: 208px;
-  padding-bottom: 183px;
-  background-image: url(/images/hero-mob.jpg);
-  background-repeat: no-repeat;
-}
-
-.hero__pre-title {
-  margin-bottom: 20px;
-  font-family: Open Sans, sans-serif;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
-}
-
-.hero__title {
-  margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
-
-.hero__after-title {
-  width: 306px;
-  font-family: Open Sans, sans-serif;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
+.logo--color {
+  fill: #ffffff;
 }
 
 .header {
@@ -111,6 +83,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-button {
@@ -202,6 +177,49 @@ img {
   margin-bottom: 24px;
 }
 
+.hero {
+  padding-top: 208px;
+  padding-bottom: 183px;
+  background-image: url(/images/hero-mob.jpg);
+  background-repeat: no-repeat;
+}
+
+.hero__pre-title {
+  margin-bottom: 20px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero__pre-title::before {
+  content: "----";
+  width: 60px;
+  border-bottom: 1px solid red;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.hero__after-title {
+  width: 306px;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
 .about {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -252,6 +270,7 @@ img {
   background-color: #111319;
   background-image: url(../images/price-mob.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .price__pre-title {
@@ -294,6 +313,10 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.price__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .features {
@@ -360,6 +383,12 @@ img {
 }
 
 .features__numbers {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-family: Open Sans, sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -369,12 +398,29 @@ img {
   color: #303030;
 }
 
+.features__numbers::after {
+  content: "+";
+  margin-left: 2px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ff6c00;
+}
+
 .features__text {
+  max-width: 122px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: Open Sans, sans-serif;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: #303030;
+}
+
+.features__text:last-child {
+  max-width: 132px;
 }
 
 .masters {
@@ -406,6 +452,10 @@ img {
 
 .masters__card {
   text-align: center;
+}
+
+.masters__card:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .masters__photo {
@@ -464,6 +514,7 @@ img {
 }
 
 .gallery__text {
+  margin-bottom: 44px;
   font-family: Open Sans, sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -494,6 +545,8 @@ img {
 }
 
 .form__button {
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 38px;
   background-color: transparent;
   border: 1px solid #ff6c00;
@@ -510,10 +563,20 @@ img {
 .form__label {
   display: block;
   margin-bottom: 44px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .form__input {
   width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
 
 .contacts {
@@ -555,6 +618,10 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #9da4bd;
+}
+
+.address__icon {
+  margin-right: 16px;
 }
 
 .contacts__shedule {

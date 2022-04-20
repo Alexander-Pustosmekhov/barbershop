@@ -60,6 +60,8 @@
 }
 
 .features__numbers {
+  display: inline-flex;
+  align-items: flex-start;
   font-family: Open Sans, sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -68,13 +70,29 @@
   letter-spacing: 0.05em;
 
   color: #303030;
+  &::after {
+    content: "+";
+    margin-left: 2px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+
+    color: #ff6c00;
+  }
 }
 
 .features__text {
+  max-width: 122px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: Open Sans, sans-serif;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
 
   color: #303030;
+  &:last-child {
+    max-width: 132px;
+  }
 }

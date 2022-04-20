@@ -10,13 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <a href="./index.html">
-          <svg width="68.93" height="55.46">
+          <svg class="logo logo--color" width="68.93" height="55.46">
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -139,7 +143,9 @@
               <p>от 200 грн.</p>
             </li>
           </ul>
-          <button class="button-appointment button-appointment--color">
+          <button
+            class="button-appointment button-appointment--color button-appointment--location"
+          >
             Онлайн-запись
           </button>
         </div>
@@ -328,13 +334,16 @@
         <div class="container">
           <h2 class="online__title">Онлайн-запись</h2>
           <form class="form">
-            <label class="form__label">
+            <label class="form__label"
+              >Имя*
               <input class="form__input" type="text" name="user-name" />
             </label>
-            <label class="form__label">
+            <label class="form__label"
+              >Телефон*
               <input class="form__input" type="tel" name="user-tel" />
             </label>
-            <label class="form__label">
+            <label class="form__label"
+              >Сообщение*
               <input class="form__input" type="text" name="user-message" />
             </label>
             <button class="form__button" type="submit">Отправить</button>
@@ -348,7 +357,7 @@
             <ul>
               <li class="address__item">
                 <a class="address__link" href="">
-                  <svg width="24" height="24">
+                  <svg class="address__icon" width="24" height="24">
                     <use href="./images/sprite.svg#map"></use>
                   </svg>
                   ул. Васильковая, 7А, Киев, 08132</a
@@ -356,7 +365,7 @@
               </li>
               <li class="address__item">
                 <a class="address__link" href="">
-                  <svg width="24" height="24">
+                  <svg class="address__icon" width="24" height="24">
                     <use href="./images/sprite.svg#phone"></use>
                   </svg>
                   +38 044 111 11 11</a
@@ -364,7 +373,7 @@
               </li>
               <li class="address__item">
                 <a class="address__link" href="">
-                  <svg width="24" height="24">
+                  <svg class="address__icon" width="24" height="24">
                     <use href="./images/sprite.svg#mail"></use>
                   </svg>
                   barbershop@email.com</a
