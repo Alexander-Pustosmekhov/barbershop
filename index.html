@@ -75,6 +75,14 @@
     <main>
       <section class="hero">
         <div class="container">
+          <ul class="hero__social">
+            <li class="hero__social-item">
+              <a href="" class="hero__social-link">Instagram</a>
+            </li>
+            <li class="hero__social-item">
+              <a href="" class="hero__social-link">Youtube</a>
+            </li>
+          </ul>
           <p class="hero__pre-title" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero__title" lang="en">BarberShop</h1>
           <p class="hero__after-title">
@@ -84,23 +92,37 @@
         </div>
       </section>
       <section class="about">
-        <div class="container">
-          <p class="about__pre-title">О НАС</p>
-          <h2 class="about__title">Лучший Барбершоп твоего города</h2>
-          <p class="about__after-title">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </p>
-          <p class="about__text">
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <button class="button-appointment" type="button">
-            Онлайн-запись
-          </button>
+        <div class="container about__container">
+          <div class="about__image">
+            <img
+              class="about__photo"
+              src="./images/about-1-tab.jpg"
+              alt="Барбер бреет"
+            />
+            <img
+              class="about__photo"
+              src="./images/about-2-tab.jpg"
+              alt="Барбер делает кантик"
+            />
+          </div>
+          <div class="about__content">
+            <p class="about__pre-title">О НАС</p>
+            <h2 class="about__title">Лучший Барбершоп твоего города</h2>
+            <p class="about__after-title">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="about__text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="button-appointment" type="button">
+              Онлайн-запись
+            </button>
+          </div>
         </div>
       </section>
       <section class="price">
@@ -109,40 +131,44 @@
             Проведи время в компании лучших мастеров
           </p>
           <h2 class="price__title">Услуги и цены</h2>
-          <ul class="price__list">
-            <li class="price__item">
-              <p>Мужская стрижка</p>
-              <p>от 300 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Стрижка бороды</p>
-              <p>от 200 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Стрижка усов</p>
-              <p>от 200 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Бритье опасной бритвой</p>
-              <p>от 200 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Cтрижка у стажера</p>
-              <p>от 50 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Стрижка под насадку</p>
-              <p>от 200 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Детская стрижка (до 12 лет)</p>
-              <p>от 300 грн.</p>
-            </li>
-            <li class="price__item">
-              <p>Камуфлирование седины</p>
-              <p>от 200 грн.</p>
-            </li>
-          </ul>
+          <div class="price__list-wrap">
+            <ul class="price__list">
+              <li class="price__item">
+                <p>Мужская стрижка</p>
+                <p>от 300 грн.</p>
+              </li>
+              <li class="price__item">
+                <p>Стрижка бороды</p>
+                <p>от 200 грн.</p>
+              </li>
+              <li class="price__item">
+                <p>Стрижка усов</p>
+                <p>от 200 грн.</p>
+              </li>
+              <li class="price__item">
+                <p>Бритье опасной бритвой</p>
+                <p>от 200 грн.</p>
+              </li>
+            </ul>
+            <ul class="price__list">
+              <li class="price__item">
+                <p>Cтрижка у стажера</p>
+                <p>от 50 грн.</p>
+              </li>
+              <li class="price__item">
+                <p>Стрижка под насадку</p>
+                <p>от 200 грн.</p>
+              </li>
+              <li class="price__item">
+                <p>Детская стрижка (до 12 лет)</p>
+                <p>от 300 грн.</p>
+              </li>
+              <li class="price__item price__item--margin">
+                <p>Камуфлирование седины</p>
+                <p>от 200 грн.</p>
+              </li>
+            </ul>
+          </div>
           <button
             class="button-appointment button-appointment--color button-appointment--location"
           >
@@ -151,13 +177,15 @@
         </div>
       </section>
       <section class="features">
-        <div class="container">
-          <p class="features__pre-title">старая традиционная школа</p>
-          <h2 class="features__title">Почему приходят именно к нам?</h2>
-          <p class="features__after-title">
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
+        <div class="container features__container">
+          <div class="features__content">
+            <p class="features__pre-title">старая традиционная школа</p>
+            <h2 class="features__title">Почему приходят именно к нам?</h2>
+            <p class="features__after-title">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
           <ul class="features__list">
             <li class="features__item">
               <span class="features__numbers">600</span>
@@ -179,10 +207,10 @@
         </div>
       </section>
       <section class="masters">
-        <div class="container">
+        <div class="container masters__container">
           <p class="masters__pre-title">для настоящих ценителей атмосферы</p>
           <h2 class="masters__title">Наши мастера</h2>
-          <ul>
+          <ul class="masters__list">
             <li class="masters__card">
               <img
                 class="masters__photo"
@@ -308,7 +336,7 @@
           <p class="gallery__text">
             На латинском языке “барба” означает “борода”
           </p>
-          <ul>
+          <ul class="gallery__list">
             <li class="gallery__item">
               <img src="./images/gallery-1-mob.jpg" alt="Барбер стрижёт" />
             </li>
@@ -330,64 +358,70 @@
           </ul>
         </div>
       </section>
-      <section class="online">
-        <div class="container">
-          <h2 class="online__title">Онлайн-запись</h2>
-          <form class="form">
-            <label class="form__label"
-              >Имя*
-              <input class="form__input" type="text" name="user-name" />
-            </label>
-            <label class="form__label"
-              >Телефон*
-              <input class="form__input" type="tel" name="user-tel" />
-            </label>
-            <label class="form__label"
-              >Сообщение*
-              <input class="form__input" type="text" name="user-message" />
-            </label>
-            <button class="form__button" type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="container">
-          <h2 class="contacts__title">Контакты</h2>
-          <address class="address">
-            <ul>
-              <li class="address__item">
-                <a class="address__link" href="">
-                  <svg class="address__icon" width="24" height="24">
-                    <use href="./images/sprite.svg#map"></use>
-                  </svg>
-                  ул. Васильковая, 7А, Киев, 08132</a
-                >
-              </li>
-              <li class="address__item">
-                <a class="address__link" href="">
-                  <svg class="address__icon" width="24" height="24">
-                    <use href="./images/sprite.svg#phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a
-                >
-              </li>
-              <li class="address__item">
-                <a class="address__link" href="">
-                  <svg class="address__icon" width="24" height="24">
-                    <use href="./images/sprite.svg#mail"></use>
-                  </svg>
-                  barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <p class="contacts__shedule">время работы</p>
-          <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
-        </div>
-      </section>
+      <div class="section-wrap">
+        <section class="online">
+          <div class="container online__container">
+            <h2 class="online__title">Онлайн-запись</h2>
+            <form class="form">
+              <label class="form__label"
+                >Имя*
+                <input class="form__input" type="text" name="user-name" />
+              </label>
+              <label class="form__label"
+                >Телефон*
+                <input class="form__input" type="tel" name="user-tel" />
+              </label>
+              <label class="form__label"
+                >Сообщение*
+                <input class="form__input" type="text" name="user-message" />
+              </label>
+              <button class="form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container contacts__container">
+            <div class="contacts__links">
+              <h2 class="contacts__title">Контакты</h2>
+              <address class="address">
+                <ul>
+                  <li class="address__item">
+                    <a class="address__link" href="">
+                      <svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#map"></use>
+                      </svg>
+                      ул. Васильковая, 7А, Киев, 08132</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="">
+                      <svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link address__link--style" href="">
+                      <svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="contacts__shedule-block">
+              <p class="contacts__shedule">время работы</p>
+              <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" href="">Instagram</a>

@@ -1,6 +1,19 @@
 .footer {
   padding-top: 44px;
   padding-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer__copyright {
@@ -15,7 +28,17 @@
 
 .footer__list {
   display: flex;
+  justify-content: end;
+  align-items: center;
   margin-bottom: 20px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    background-color: currentColor;
+  }
 }
 
 .footer__item {
@@ -30,6 +53,7 @@
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+  text-decoration: none;
 
   color: #303030;
 }
